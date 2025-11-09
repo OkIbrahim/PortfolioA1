@@ -9,7 +9,6 @@
 
 .hero-section {
   background-color: var(--background-color);
-  padding: 3rem 0;
 }
 
 .header {
@@ -858,3 +857,4 @@ textarea:focus {
   height: 3rem;
   color: orangered;
 }
+
