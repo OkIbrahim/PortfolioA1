@@ -1,0 +1,630 @@
+/* MEDIA QUERIES */
+@media (max-width: 75em) {
+  .hero {
+    padding: 0 6rem;
+    margin-top: 5.5rem;
+    gap: 6rem;
+  }
+
+  .hero-h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-h2 {
+    font-size: 3rem;
+  }
+
+  .hero-p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero-number {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 3.5rem;
+  }
+
+  .hero-h3 {
+    font-size: 4rem;
+  }
+
+  .hero-h4 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .section-services,
+  .section-works,
+  .section-resume,
+  .section-skills,
+  .section-contact {
+    padding: 8rem 6rem;
+  }
+
+  .offer,
+  .offer-2 {
+    gap: 10rem;
+  }
+
+  .offer-text {
+    font-size: 1.4rem;
+  }
+
+  .contact-heading {
+    font-size: 2.8rem;
+  }
+
+  .contact-subheading {
+    font-size: 1.7rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 45%;
+  }
+
+  input[type="tel"] {
+    font-size: 1.4rem;
+  }
+
+  select,
+  textarea,
+  .form-button {
+    width: 95%;
+  }
+
+  .footer {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .header {
+    padding: 0 6rem;
+    gap: 2.5rem;
+  }
+
+  .header-logo {
+    margin-right: 1rem;
+  }
+
+  .logo-img {
+    margin-right: 1.5rem;
+  }
+
+  .header-nav ul {
+    gap: 1.5rem;
+  }
+
+  .header-anchor {
+    font-size: 1.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.4rem;
+  }
+
+  .main-nav-cta:link,
+  .main-nav-cta:visited {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+
+  .hero {
+    gap: 6rem;
+    margin-top: 6rem;
+    padding: 0 6rem;
+  }
+
+  .hero-h1 {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-p {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 3.5rem;
+  }
+
+  .hero-number {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .ion-icon-github,
+  .ion-icon-twitter,
+  .ion-icon-fb,
+  .ion-icon-linkedin {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .first-content {
+    gap: 0.7rem;
+  }
+
+  .hero-h3 {
+    font-size: 3.5rem;
+  }
+
+  .hero-h4 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .section-subheading {
+    margin-bottom: 4rem;
+  }
+
+  .offer,
+  .offer-2 {
+    gap: 7rem;
+  }
+
+  .offer-2 h3 {
+    width: 17.2rem;
+  }
+
+  .offer-number {
+    font-size: 1.8rem;
+  }
+
+  .offer-heading {
+    font-size: 2.5rem;
+  }
+
+  .offer-text {
+    font-size: 1.16rem;
+  }
+
+  .html-css-text,
+  .advanced-css-sass-text {
+    gap: 1.8rem;
+  }
+
+  .html-css-text p,
+  .advanced-css-sass-text p {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 46%;
+  }
+
+  .contact-setup {
+    gap: 8rem;
+  }
+
+  .contact-details {
+    gap: 7rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .btn-mobile-nav {
+    display: block !important;
+    z-index: 9999;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    color: var(--text-color1) !important;
+    font-size: 3rem !important;
+  }
+
+  .header-nav {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .header-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    gap: 4.8rem !important;
+  }
+
+  .header-logo {
+    margin-right: auto;
+  }
+
+  .section-services,
+  .section-works,
+  .section-resume,
+  .section-skills,
+  .section-contact {
+    padding: 6rem 4rem;
+  }
+
+  .hero {
+    gap: 4rem;
+    margin-top: 4rem;
+    padding: 0 4rem;
+  }
+
+  .offer,
+  .offer-2 {
+    gap: 4rem;
+  }
+
+  .offer-2 h3 {
+    width: 14rem;
+  }
+
+  .offer-number {
+    font-size: 1.6rem;
+  }
+
+  .offer-heading {
+    font-size: 2rem;
+  }
+
+  .offer-text {
+    font-size: 1.1rem;
+  }
+
+  .section-subheading {
+    font-size: 1.4rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 45.5%;
+  }
+
+  .contact-setup {
+    gap: 6rem;
+  }
+
+  .contact-details {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .header {
+    padding: 0 2rem;
+    gap: 1.75rem;
+  }
+
+  .logo-img {
+    margin-right: 0.5rem;
+  }
+
+  .header-anchor {
+    font-size: 1.3rem;
+  }
+
+  .main-nav-cta:link,
+  .main-nav-cta:visited {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .hero {
+    gap: 3rem;
+    margin-top: 2.5rem;
+    padding: 0 2rem;
+  }
+
+  .hero-h2,
+  .hero-h1 {
+    text-align: center;
+  }
+
+  .hero-h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-p {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+  }
+
+  .ion-icons,
+  .hero-number {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-services,
+  .section-works,
+  .section-resume,
+  .section-skills,
+  .section-contact {
+    padding: 4rem 2rem;
+  }
+
+  .section-header {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-subheading {
+    margin-bottom: 2rem;
+    padding: 0 3rem;
+  }
+
+  .offer,
+  .offer-2 {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .offer-number {
+    text-align: center;
+  }
+
+  .offer-2 h3 {
+    width: 100%;
+  }
+
+  .popup-icon {
+    top: 0.5rem;
+  }
+
+  .popup a {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .popup h4 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .contact-heading {
+    font-size: 2.2rem;
+  }
+
+  .contact-subheading {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 95%;
+  }
+
+  .contact-setup {
+    gap: 6rem;
+  }
+
+  .contact-details {
+    gap: 5rem;
+  }
+
+  .footer-navigation {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+
+  .footer-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .footer-link {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .logo-img {
+    height: 5rem;
+  }
+
+  .header-anchor {
+    font-size: 1rem;
+  }
+
+  .header {
+    padding: 0 1rem;
+    gap: 1.15rem;
+  }
+
+  .main-nav-cta:link,
+  .main-nav-cta:visited {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .section-header {
+    font-size: 2.2rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .section-subheading {
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+    font-size: 1.1rem;
+  }
+
+  .offer-heading {
+    font-size: 1.4rem;
+  }
+
+  .offer-text {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .omnifood,
+  .nexter,
+  .trillo,
+  .natours,
+  .bankist-app,
+  .bankist-site {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+  }
+
+  .omnifoodgrid,
+  .nextergrid,
+  .trillogrid,
+  .natoursgrid,
+  .bankistgrid {
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
+  }
+
+  .popup {
+    position: absolute;
+    bottom: 11%;
+    left: 10%;
+    width: 80%;
+    padding: 0.1rem;
+  }
+
+  .popup-icon {
+    top: 0.1rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .popup a {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    padding-left: 0.3rem;
+  }
+
+  .popup h4 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .certifications-gallery {
+    margin-top: 4rem;
+    gap: 4rem;
+  }
+
+  .html-css,
+  .advaced-css-sass {
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    background-color: #0f0715;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.5s;
+  }
+
+  .html-css-text p,
+  .advanced-css-sass-text p {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .html-css img,
+  .advaced-css-sass img {
+    width: 25%;
+  }
+
+  .html-css-text,
+  .advanced-css-sass-text {
+    gap: 1.6rem;
+  }
+
+  .contact-heading {
+    font-size: 1.8rem;
+  }
+
+  .contact-subheading {
+    font-size: 1.3rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .phone-form-img,
+  .mail-form-img,
+  .github-form-img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .phone-form-text,
+  .mail-form-text,
+  .github-form-text {
+    justify-content: center;
+  }
+
+  .phone-details,
+  .mail-details,
+  .github-details {
+    gap: 1rem;
+  }
+
+  .phone-form-text p,
+  .mail-form-text p,
+  .github-form-text p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .phone-form-text a,
+  .mail-form-text a,
+  .github-form-text a {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .footer-navigation {
+    padding: 0 1rem;
+  }
+
+  .footer-item:not(:last-child) {
+    margin-right: 0.7rem;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+
+  .footer-link:hover::after {
+    height: 2px;
+  }
+}
