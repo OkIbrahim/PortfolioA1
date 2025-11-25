@@ -258,6 +258,15 @@
   line-height: 1.4;
 }
 
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .section-services {
   padding: 10rem 7rem;
   background-color: var(--background-color2);
@@ -857,5 +866,3 @@ textarea:focus {
   height: 3rem;
   color: orangered;
 }
-
-
