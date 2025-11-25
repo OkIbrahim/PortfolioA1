@@ -259,7 +259,7 @@
 }
 
 .section {
-  transition: transform 1s, opacity 1s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .section--hidden {
