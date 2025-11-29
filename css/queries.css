@@ -51,6 +51,10 @@
     font-size: 1.5rem;
   }
 
+  .skills-gallery {
+    padding: 0 2rem;
+  }
+
   .contact-heading {
     font-size: 2.8rem;
   }
@@ -63,10 +67,6 @@
   input[type="email"],
   input[type="tel"] {
     width: 45%;
-  }
-
-  input[type="tel"] {
-    font-size: 1.4rem;
   }
 
   select,
@@ -301,7 +301,7 @@
   }
 
   .section-subheading {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   input[type="text"],
@@ -351,13 +351,13 @@
   }
 
   .hero-h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 
   .hero-p {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     margin-top: 1.5rem;
-    line-height: 1.1;
+    line-height: 1.2;
     margin-bottom: 3rem;
   }
 
@@ -414,12 +414,16 @@
     font-weight: 500;
   }
 
+  .skills-gallery {
+    gap: 1.7rem;
+  }
+
   .contact-heading {
     font-size: 2.2rem;
   }
 
   .contact-subheading {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   input[type="text"],
@@ -456,7 +460,7 @@
   }
 
   .header-anchor {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .header {
@@ -478,15 +482,16 @@
   .section-subheading {
     margin-bottom: 1.5rem;
     padding: 0 2rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
   }
 
   .offer-heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .offer-text {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     line-height: 1.2;
   }
 
@@ -497,7 +502,7 @@
   .bankist-app,
   .bankist-site {
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-left: 2.5rem;
   }
 
@@ -514,7 +519,7 @@
   .popup {
     position: absolute;
     bottom: 11%;
-    left: 10%;
+    left: 9%;
     width: 80%;
     padding: 0.1rem;
   }
@@ -568,12 +573,20 @@
     gap: 1.6rem;
   }
 
+  .section-services,
+  .section-works,
+  .section-resume,
+  .section-skills,
+  .section-contact {
+    padding: 3rem 1rem;
+  }
+
   .contact-heading {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .contact-subheading {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 1.8rem;
   }
 
@@ -619,7 +632,7 @@
   }
 
   .footer-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     padding-bottom: 0.2rem;
   }
@@ -628,5 +641,3 @@
     height: 2px;
   }
 }
-
-
