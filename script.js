@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   gridItemsLeft.forEach((item, index) => {
     setTimeout(() => {
       item.classList.add("fade-in-left");
-    }, index * 500); // Staggered delay for a nicer effect
+    }, index * 200); // Staggered delay for a nicer effect
   });
 });
 
@@ -97,6 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
   gridItemsRight.forEach((item, index) => {
     setTimeout(() => {
       item.classList.add("fade-in-right");
-    }, index * 500); // Staggered delay for a nicer effect
+    }, index * 200); // Staggered delay for a nicer effect
   });
 });
