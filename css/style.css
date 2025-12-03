@@ -21,6 +21,7 @@
 }
 
 /* STICKY NAVIGATION */
+/* Sticky is a parent class of the header, which we toggle on the body using Javascript */
 .sticky .header {
   position: fixed;
   top: 0;
@@ -32,10 +33,11 @@
   background-color: var(--background-color);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(255, 255, 255, 0.2);
-opacity: 0.95;
+  opacity: 0.95;
 }
 
 .sticky .hero-section {
+  /* Same height as header */
   margin-top: 9rem;
 }
 
@@ -48,6 +50,7 @@ opacity: 0.95;
 
 .logo-img {
   height: 8rem;
+  /* border-radius: 50%; same as the clip-path styling below */
   clip-path: circle(50% at 50% 50%);
   margin-right: 3rem;
 }
@@ -439,7 +442,8 @@ opacity: 0.95;
 .trillo,
 .natours,
 .bankist-app,
-.bankist-site {
+.bankist-site,
+.mapty {
   position: relative;
 }
 
@@ -447,7 +451,8 @@ opacity: 0.95;
 .nextergrid,
 .trillogrid,
 .natoursgrid,
-.bankistgrid {
+.bankistgrid,
+.maptygrid {
   width: 100%;
   height: 100%;
   border-radius: 3rem;
@@ -458,7 +463,8 @@ opacity: 0.95;
 .trillo:hover .popup,
 .natours:hover .popup,
 .bankist-app:hover .popup,
-.bankist-site:hover .popup {
+.bankist-site:hover .popup,
+.mapty:hover .popup {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
@@ -882,4 +888,3 @@ textarea:focus {
   height: 3rem;
   color: orangered;
 }
-
