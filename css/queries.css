@@ -500,7 +500,8 @@
   .trillo,
   .natours,
   .bankist-app,
-  .bankist-site {
+  .bankist-site,
+  .mapty {
     position: relative;
     /* margin: 0 auto; */
     padding-left: 2.5rem;
@@ -510,7 +511,8 @@
   .nextergrid,
   .trillogrid,
   .natoursgrid,
-  .bankistgrid {
+  .bankistgrid,
+  .maptygrid {
     width: 90%;
     height: 90%;
     border-radius: 1rem;
@@ -641,4 +643,3 @@
     height: 2px;
   }
 }
-
