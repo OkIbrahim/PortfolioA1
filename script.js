@@ -75,10 +75,28 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.05,
+  threshold: 0.15,
 });
 
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const gridItemsLeft = document.querySelectorAll(".grid-item-left");
+  gridItemsLeft.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add("fade-in-left");
+    }, index * 500); // Staggered delay for a nicer effect
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const gridItemsRight = document.querySelectorAll(".grid-item-right");
+  gridItemsRight.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add("fade-in-right");
+    }, index * 500); // Staggered delay for a nicer effect
+  });
 });
