@@ -237,6 +237,20 @@ opacity: 0.95;
   border-radius: 15rem;
 }
 
+.fade-in {
+  opacity: 1;
+  animation: fadeInOpacity 2s ease-in 1;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero-number {
   margin-top: 4rem;
   display: flex;
@@ -868,3 +882,4 @@ textarea:focus {
   height: 3rem;
   color: orangered;
 }
+
