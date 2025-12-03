@@ -242,7 +242,7 @@
 
 .fade-in {
   opacity: 1;
-  animation: fadeInOpacity 2s ease-in 1;
+  animation: fadeInOpacity 3s ease-in 1;
 }
 
 @keyframes fadeInOpacity {
@@ -888,3 +888,4 @@ textarea:focus {
   height: 3rem;
   color: orangered;
 }
+
