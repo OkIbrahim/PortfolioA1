@@ -443,7 +443,8 @@
 .natours,
 .bankist-app,
 .bankist-site,
-.mapty {
+.mapty,
+.portfolio-A1 {
   position: relative;
 }
 
@@ -452,7 +453,8 @@
 .trillogrid,
 .natoursgrid,
 .bankistgrid,
-.maptygrid {
+.maptygrid,
+.portfoliogrid {
   width: 100%;
   height: 100%;
   border-radius: 3rem;
@@ -464,7 +466,8 @@
 .natours:hover .popup,
 .bankist-app:hover .popup,
 .bankist-site:hover .popup,
-.mapty:hover .popup {
+.mapty:hover .popup,
+.portfolio-A1:hover .popup {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
@@ -889,3 +892,24 @@ textarea:focus {
   color: orangered;
 }
 
+.grid-item-left {
+  opacity: 0;
+  transform: translateX(-5rem); /* Adjust as needed */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Define the transition */
+}
+
+.grid-item-left.fade-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.grid-item-right {
+  opacity: 0;
+  transform: translateX(5rem);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.grid-item-right.fade-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
