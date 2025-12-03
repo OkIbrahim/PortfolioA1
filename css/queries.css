@@ -501,7 +501,8 @@
   .natours,
   .bankist-app,
   .bankist-site,
-  .mapty {
+  .mapty,
+  .portfolio-A1 {
     position: relative;
     /* margin: 0 auto; */
     padding-left: 2.5rem;
@@ -512,7 +513,8 @@
   .trillogrid,
   .natoursgrid,
   .bankistgrid,
-  .maptygrid {
+  .maptygrid,
+  .portfoliogrid {
     width: 90%;
     height: 90%;
     border-radius: 1rem;
