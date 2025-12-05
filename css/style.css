@@ -173,6 +173,32 @@
   font-size: 4rem;
 }
 
+.fade-in-text {
+  animation: left-to-right-fade-in 1s ease-in;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@keyframes left-to-right-fade-in {
+  0% {
+    -webkit-mask-size: 0%;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 70%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  100% {
+    -webkit-mask-size: 100%;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 70%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+}
+
+
 .hero-h1 {
   font-size: 5.5rem;
   margin-top: 2rem;
@@ -913,3 +939,4 @@ textarea:focus {
   opacity: 1;
   transform: translateX(0);
 }
+
