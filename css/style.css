@@ -173,32 +173,6 @@
   font-size: 4rem;
 }
 
-.fade-in-text {
-  animation: left-to-right-fade-in 1s ease-in;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
-@keyframes left-to-right-fade-in {
-  0% {
-    -webkit-mask-size: 0%;
-    -webkit-mask-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 70%,
-      rgba(0, 0, 0, 0)
-    );
-  }
-  100% {
-    -webkit-mask-size: 100%;
-    -webkit-mask-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1) 70%,
-      rgba(0, 0, 0, 0)
-    );
-  }
-}
-
-
 .hero-h1 {
   font-size: 5.5rem;
   margin-top: 2rem;
@@ -545,51 +519,58 @@
   margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 6rem;
+  gap: 3rem;
 }
 
 .html-css,
-.advaced-css-sass {
-  padding: 2.5rem 3rem;
+.advaced-css-sass,
+.javascriptCert {
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
   background-color: #0f0715;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   transition: all 0.5s;
 }
 
 .html-css:hover,
-.advaced-css-sass:hover {
+.advaced-css-sass:hover,
+.javascriptCert:hover {
   background-image: linear-gradient(to right, #8750f7, #2a1454);
 }
 
 .html-css:hover .html-css-text p,
-.advaced-css-sass:hover .advanced-css-sass-text p {
+.advaced-css-sass:hover .advanced-css-sass-text p,
+.javascriptCert:hover .javascript-text p {
   color: #fff;
 }
 
 .html-css img,
-.advaced-css-sass img {
-  width: 30%;
+.advaced-css-sass img,
+.javascriptCert img {
+  width: 40%;
 }
 
 .html-css-text,
-.advanced-css-sass-text {
+.advanced-css-sass-text,
+.javascript-text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .html-css-text p,
-.advanced-css-sass-text p {
-  font-size: 3rem;
+.advanced-css-sass-text p,
+.javascript-text p {
+  font-size: 2rem;
   color: #8750f7;
   font-weight: 700;
   transition: all 0.5s;
 }
 
 .html-css-text span,
-.advanced-css-sass-text span {
+.advanced-css-sass-text span,
+.javascript-text span {
   font-size: 2.5rem;
   color: #fff;
 }
@@ -940,3 +921,27 @@ textarea:focus {
   transform: translateX(0);
 }
 
+.fade-in-text {
+  animation: left-to-right-fade-in 1s ease-in;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@keyframes left-to-right-fade-in {
+  0% {
+    -webkit-mask-size: 0%;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 70%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  100% {
+    -webkit-mask-size: 100%;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 70%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+}
