@@ -51,6 +51,11 @@
     font-size: 1.5rem;
   }
 
+  .certifications-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+  }
+
   .skills-gallery {
     padding: 0 2rem;
   }
@@ -182,15 +187,32 @@
     font-size: 1.3rem;
   }
 
+  .section-resume {
+    padding: 8rem 3rem;
+  }
+
+  .certifications-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+  }
+
   .html-css-text,
-  .advanced-css-sass-text {
+  .advanced-css-sass-text,
+  .javascript-text {
     gap: 1.8rem;
   }
 
   .html-css-text p,
-  .advanced-css-sass-text p {
-    font-size: 2.5rem;
+  .advanced-css-sass-text p,
+  .javascript-text p {
+    font-size: 1.6rem;
     font-weight: 600;
+  }
+
+  .html-css-text span,
+  .advanced-css-sass-text span,
+  .javascript-text span {
+    font-size: 1.5rem;
   }
 
   input[type="text"],
@@ -304,6 +326,27 @@
     font-size: 1.6rem;
   }
 
+  .javascriptCert {
+    grid-column: span 2;
+    gap: 6rem;
+  }
+
+  .javascriptCert img {
+    width: 30%;
+  }
+
+  .javascript-text {
+    gap: 3rem;
+  }
+
+  .javascript-text p {
+    font-size: 4rem;
+  }
+
+  .javascript-text span {
+    font-size: 3.5rem;
+  }
+
   input[type="text"],
   input[type="email"],
   input[type="tel"] {
@@ -412,6 +455,54 @@
   .popup h4 {
     font-size: 1rem;
     font-weight: 500;
+  }
+
+  .certifications-gallery {
+    margin-top: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 5rem;
+  }
+
+  .html-css,
+  .advaced-css-sass {
+    gap: 2.5rem;
+    border-radius: 1rem;
+  }
+
+  .html-css img,
+  .advaced-css-sass img {
+    width: 40%;
+  }
+
+  .html-css-text,
+  .advanced-css-sass-text {
+    gap: 3rem;
+  }
+
+  .html-css-text p,
+  .advanced-css-sass-text p,
+  .html-css-text span,
+  .advanced-css-sass-text span {
+    font-size: 2.8rem;
+  }
+
+  .javascriptCert {
+    grid-column: span 1;
+    gap: 2.5rem;
+    border-radius: 1rem;
+  }
+
+  .javascriptCert img {
+    width: 40%;
+  }
+
+  .javascript-text {
+    gap: 3rem;
+  }
+
+  .javascript-text p,
+  .javascript-text span {
+    font-size: 2.7rem;
   }
 
   .skills-gallery {
@@ -548,7 +639,16 @@
 
   .certifications-gallery {
     margin-top: 4rem;
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2rem;
+  }
+
+  .javascriptCert {
+    grid-column: span 1;
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    transition: all 0.5s;
   }
 
   .html-css,
@@ -557,19 +657,27 @@
     border-radius: 1rem;
     background-color: #0f0715;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     transition: all 0.5s;
   }
 
   .html-css-text p,
-  .advanced-css-sass-text p {
+  .advanced-css-sass-text p,
+  .javascript-text p {
     font-size: 2rem;
     font-weight: 500;
   }
 
+  .html-css-text span,
+  .advanced-css-sass-text span,
+  .javascript-text span {
+    font-size: 1.8rem;
+  }
+
   .html-css img,
-  .advaced-css-sass img {
-    width: 25%;
+  .advaced-css-sass img,
+  .javascriptCert img {
+    width: 35%;
   }
 
   .html-css-text,
